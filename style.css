@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-seri
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+header p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+header h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.logo img{
+    width: 90px;
+    border-radius: 50%;
+}
+.logo{
+    width: 60px;
+    margin: auto;
+}
+form{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width:min(300px , 90vw);
+    margin: auto;
+    margin-block: 30px;
+}
+form * {
+    width: 100% !important;
+}
+form .valid ,
+form button {
+    all: unset;
+    box-shadow: 0px 10px 10px rgba(172, 170, 170, 0.444);
+    border: 2px solid rgba(219, 211, 211, 0.579);
+    padding: 10px;
+    border-radius: 25px;
+}
+.valid:invalid:not(:placeholder-shown){
+    border:  2px solid red;
+    box-shadow: 0px 10px 10px rgba(255, 0, 0, 0.278) ;
+}
+.valid:valid:not(:placeholder-shown){
+    border:  2px solid green;
+    box-shadow: 0px 10px 10px rgba(0, 128, 0, 0.34);
+}
+
+.Sign:hover{
+    border:  2px solid green;
+    box-shadow: 0px 10px 30px rgba(0, 128, 0, 0.748);
+}
+
+.password-cap{
+    position: relative;
+    top: -10px;
+    left: -20px;
+    color: rgba(0, 0, 0, 0.597);
+    font-size: small;
+}
+.check{
+    display: flex;
+    margin-top: 15px;
+}
+.check p{
+    padding:0 10px;
+    margin-bottom: 5px;
+}
+.submit{
+    position: relative;
+    top: -3px;
+}
+.login{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 20px rgba(94, 93, 93, 0.444);
+}
+.login:hover{
+    border:  2px solid rgb(184, 4, 4);
+    box-shadow: 0px 5px 20px rgba(188, 2, 2, 0.748);
+}
